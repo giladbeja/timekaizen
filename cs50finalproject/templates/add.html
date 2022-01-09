@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Add Todo
+{% endblock %}
+
+{% block main %}
+
+<form action="/add" method="post">
+  <div class="form-group">
+    <input autocomplete="off" autofocus class="form-control" name="add" placeholder="To Do List Item" type="text">
+  </div>
+  <div class="form-group">
+    <label for="date">Due Date:</label>
+    <input type="date" name="date">
+  </div>
+  <button class="btn btn-primary" type="submit">Add Item to List</button>
+</form>
+
+{% endblock %}

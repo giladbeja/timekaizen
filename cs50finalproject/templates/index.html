@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Your Assignments
+{% endblock %}
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+<header class="alert alert-primary border text-center" role="alert">
+  {{ message }}
+</header>
+{% endif %}
+{% endwith %}
+
+{% block main %}
+
+<form action="/" method="post">
+  <button class = "btn btn-primary" type="submit">Clear Top Assignment</button>
+</form>
+<table class="table table-striped">
+  <thead>
+    <th>To Do</th>
+    <th>Due Date</th>
+    <th>Days Remaining</th>
+  </thead>
+  <tbody>
+    {% for item in items %}
+    <tr>
+      <td>{{item.Todo}}</td>
+      <td>{{item.DueDate}}</td>
+      <td>{{item.Daysremaining}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<img src="static/motivate.png">
+
+{% endblock %}
