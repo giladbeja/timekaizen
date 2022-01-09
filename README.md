@@ -1,2 +1,13 @@
-# timekaizen
-time management website using flask, final project of Harvard CS50X.
+#Time Kaizen ###Video Demo: https://youtu.be/fJXDmDSZroY ###Description: This web application created using flask allows users to better manage their time by adding and removing assignments to a Todo list and showing them by when it must be completed and prioritizing more urgent assignments. The design and layout was inspired by the CS50 Finance assignment.
+
+I decided to do this for my project because as I procrastinated more and more while completing it, I realized that I was very bad with time management and that people like me need something to tell them what to do and when to do it. I think that this is something very useful in our day to day lives that we may take for granted at times.
+
+I used the same layout of database as the CS50 Finance database however I changed specific fields within the table to make it better suited to this project. I also created html files to make a seperate design for each path of this web page. I worked hard on this and although it can be designed better and can have more thought and detailed aspects put into it, a basic time management application is something that is necessary for everyone no matter how busy they are.
+
+The add.html file has the standard layout with an input for a text to put the assignment desired to be completed. It then has a date input in order to find the due date. The apology.html file was originally part of the project, however I implemented the flash function and that is no longer necessary. The index.html file is the homepage and shows a table with the to do list item, the due date, and days remaining to do the given assignment. The login and register html files are standard and the same as in the CS50 finance assignment.
+
+At first, when I started this project, I did not intend to make it a time management web app. Instead, it was meant to be a cryptocurrency simulator. Like the stock simulator from the finance assignment. However, in the past week I realized how much I had procrastinated in making this and I needed better time management. I thought that this would be a perfect opportunity to make a time management web application that would help me not just in ordinary things but also in future programming projects that I do.
+
+I came up with the name "Time Kaizen" for my project because I wanted it to be a time management site and I was somewhat familiar with the word Kaizen, however felt as though I needed to research it more. Kaizen is a Japanese philosophy of management in order to be as efficient as possible and to micromanage every aspect of business from the top all the way down to the small details. I thought that this is a perfect representation of what I wanted to create and so I decided to go with "Time Kaizen" for the name of this project.
+
+Overall I enjoyed working on this and am proud of this as my first ever project within my programming portfolio.
